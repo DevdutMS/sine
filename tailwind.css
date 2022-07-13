@@ -3957,6 +3957,18 @@ textarea.form-control.is-invalid {
   bottom: 0px;
 }
 
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -4365,6 +4377,10 @@ textarea.form-control.is-invalid {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-6 {
@@ -5942,6 +5958,12 @@ ul {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
   .md\:py-0 {
