@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-Light.ttf") format("truetype");
+    src: url("./fonts/WorkSans-Light.ttf") format("truetype");
     font-weight: 300;
     font-display: swap;
     font-style: normal;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+    src: url("./fonts/WorkSans-Regular.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
     font-style: normal;
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/Satoshi-Medium.woff2") format("truetype");
+    src: url("./fonts/Satoshi-Medium.woff2") format("truetype");
     font-weight: 500;
     font-display: swap;
     font-style: normal;
@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-SemiBold.ttf") format("truetype");
+    src: url("./fonts/WorkSans-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-display: swap;
     font-style: normal;
@@ -42,7 +42,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+    src: url("./fonts/WorkSans-Bold.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
     font-style: normal;
@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-BoldItalic.ttf") format("truetype");
+    src: url("./fonts/WorkSans-BoldItalic.ttf") format("truetype");
     font-weight: 700;
     font-display: swap;
     font-style: italic;
@@ -59,7 +59,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-ExtraBold.ttf") format("truetype");
+    src: url("./fonts/WorkSans-ExtraBold.ttf") format("truetype");
     font-weight: 800;
     font-display: swap;
     font-style: normal;
@@ -67,7 +67,7 @@
 
 @font-face {
     font-family: "Work Sans";
-    src: url("../fonts/WorkSans-Black.ttf") format("truetype");
+    src: url("./fonts/WorkSans-Black.ttf") format("truetype");
     font-weight: 900;
     font-display: swap;
     font-style: normal;
@@ -254,7 +254,9 @@ ul {
     background-color: rgb(255 255 255 / 80%);
 }
 
-
+.systems-header {
+    background: linear-gradient(42deg, rgba(20, 7, 0, 1) 0%, rgba(20, 7, 0, 0.9) 100%);
+}
 
 
 

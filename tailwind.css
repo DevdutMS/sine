@@ -998,11 +998,6 @@ textarea.form-control.is-invalid {
   border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
-.accordion-item:last-of-type .accordion-collapse {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-
 .btn-close.disabled {
   pointer-events: none;
   -webkit-user-select: none;
@@ -3957,6 +3952,10 @@ textarea.form-control.is-invalid {
   bottom: 0px;
 }
 
+.left-24 {
+  left: 6rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -4150,6 +4149,10 @@ textarea.form-control.is-invalid {
   width: 3.5rem;
 }
 
+.w-400 {
+  width: 400px;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -4191,6 +4194,10 @@ textarea.form-control.is-invalid {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -4656,7 +4663,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-Light.ttf") format("truetype");
+  src: url("./fonts/WorkSans-Light.ttf") format("truetype");
 
   font-weight: 300;
 
@@ -4668,7 +4675,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+  src: url("./fonts/WorkSans-Regular.ttf") format("truetype");
 
   font-weight: 400;
 
@@ -4680,7 +4687,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/Satoshi-Medium.woff2") format("truetype");
+  src: url("./fonts/Satoshi-Medium.woff2") format("truetype");
 
   font-weight: 500;
 
@@ -4692,7 +4699,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-SemiBold.ttf") format("truetype");
+  src: url("./fonts/WorkSans-SemiBold.ttf") format("truetype");
 
   font-weight: 600;
 
@@ -4704,7 +4711,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-Bold.ttf") format("truetype");
+  src: url("./fonts/WorkSans-Bold.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -4716,7 +4723,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-BoldItalic.ttf") format("truetype");
+  src: url("./fonts/WorkSans-BoldItalic.ttf") format("truetype");
 
   font-weight: 700;
 
@@ -4728,7 +4735,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-ExtraBold.ttf") format("truetype");
+  src: url("./fonts/WorkSans-ExtraBold.ttf") format("truetype");
 
   font-weight: 800;
 
@@ -4740,7 +4747,7 @@ textarea.form-control.is-invalid {
 @font-face {
   font-family: "Work Sans";
 
-  src: url("../fonts/WorkSans-Black.ttf") format("truetype");
+  src: url("./fonts/WorkSans-Black.ttf") format("truetype");
 
   font-weight: 900;
 
@@ -4927,6 +4934,10 @@ ul {
 
 .systems-dropdown ul li:hover {
   background-color: rgb(255 255 255 / 80%);
+}
+
+.systems-header {
+  background: linear-gradient(42deg, rgba(20, 7, 0, 1) 0%, rgba(20, 7, 0, 0.9) 100%);
 }
 
 /* -------------------------------swiper --------------------------- */
