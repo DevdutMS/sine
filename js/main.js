@@ -16,3 +16,11 @@ $(".button-dm").click(function () {
 $(".nav-menus-wrapper-close-button").click(function () {
   $(".side-menu").removeClass("active");
 });
+
+
+
+$(document).ready(function(){
+  $("#accordion-collapse-d").click(function(){
+    $("#accordion-collapse-body-d").slideToggle();
+  });
+});
