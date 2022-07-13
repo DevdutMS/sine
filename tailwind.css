@@ -4831,12 +4831,12 @@ ul {
 
 .mySwiper .swiper-button-prev,
 .mySwiper .swiper-container-rtl .swiper-button-next {
-  background-image: url(../img/Arrow-left.svg);
+  background-image: url(./img/Arrow-left.svg);
 }
 
 .mySwiper .swiper-button-next,
 .mySwiper .swiper-container-rtl .swiper-button-prev {
-  background-image: url(../img/Arrow-right.svg);
+  background-image: url(./img/Arrow-right.svg);
 }
 
 .mySwiper .swiper-button-next,
@@ -4848,7 +4848,7 @@ ul {
 }
 
 .bullet-ul li::before {
-  background-image: url(../img/Bullet-Icon.svg);
+  background-image: url(./img/Bullet-Icon.svg);
   position: absolute;
   background-size: 11px 24px;
   display: inline-block;
@@ -4880,7 +4880,7 @@ ul {
 /*------------ about us section  -------------*/
 
 .aboutus-home-section {
-  background: url(../img/aboutus-bg.jpg) no-repeat center center;
+  background: url(./img/aboutus-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -4895,7 +4895,7 @@ ul {
 /* shade-bg  */
 
 .shade-bg {
-  background: url(../img/bg-shade.jpg) no-repeat center center;
+  background: url(./img/bg-shade.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -5645,7 +5645,7 @@ ul {
 
 @media (max-width: 991px) {
   .rd-section {
-    background: url(../img/img3.jpg) no-repeat center center fixed;
+    background: url(./img/img3.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100%;
   }
@@ -5661,11 +5661,11 @@ ul {
   }
 
   .bullet-ul li::before {
-    background-image: url(../img/Bullet-Icon-white.svg);
+    background-image: url(./img/Bullet-Icon-white.svg);
   }
 
   .ovarlay-clad-div  .bullet-ul li::before{
-    background-image: url(../img/Bullet-Icon.svg);
+    background-image: url(./img/Bullet-Icon.svg);
   }
 }
 
