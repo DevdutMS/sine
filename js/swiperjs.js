@@ -65,7 +65,15 @@ $(document).ready(function () {
     },
   });
 
-
+  
+  var swiper = new Swiper(".ourSysytemSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
 });
 
