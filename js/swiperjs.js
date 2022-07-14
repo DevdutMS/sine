@@ -27,7 +27,7 @@ $(document).ready(function () {
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 5000,
       disableOnInteraction: false,
     },
     navigation: {
@@ -66,35 +66,6 @@ $(document).ready(function () {
   });
 
 
-  var swiper = new Swiper(".companystatsSwiper", {
-    slidesPerView: 5,
-    loop: true,
-    autoplay: {
-      delay: 1,
-      disableOnInteraction: true,
-      reverseDirection: true,
-    },
-    speed: 2000,
-    spaceBetween: 100,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 40,
-      },   
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 50,
-      },
-    },
-  });
 
 });
 

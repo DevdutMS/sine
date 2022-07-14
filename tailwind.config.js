@@ -19,6 +19,8 @@ module.exports = {
       },
       colors: {
         "primary-black": "#140700",
+        "primary-black-90": "rgb(20 7 0 / 90%)",
+        "primary-black-80": "rgb(20 7 0 / 80%)",
         "primary-orange": "#F6611A",
         "primary-white": "#FAFCFE",
         "primary-gray": "#565656",
@@ -28,11 +30,12 @@ module.exports = {
         "primary-gray-02": "#F4F0EC",
       },
       lineHeight: {
-        tighter: "55px",
+        tighter: "60px",
       },
       fontSize: {
         "3.5xl": "32px",
         "4.5xl": "40px",
+        "4.8xl": "44px",
         "5.2xl": "52px",
         "6.5xl": "68px",
       },
