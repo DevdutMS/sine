@@ -128,30 +128,31 @@ ul {
     display: none;
 }
 
-.a-nav{
+.a-nav {
     transition: 0.4s ease;
 }
 
-.orange-div{
+.orange-div {
     transition: all 0.4s ease;
 }
 
-.a-nav.scrolled .orange-div{
-   display: none;
-   animation: height 0.8s ease;
+.a-nav.scrolled .orange-div {
+    display: none;
+    animation: height 0.8s ease;
 }
 
 @keyframes height {
-   0%{
-    height: 40px;
-    display: flex;
-    opacity: 1;
-   } 
-   100%{
-    height: 0;
-    opacity: 0;
-    display: none;
-   }
+    0% {
+        height: 40px;
+        display: flex;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+        opacity: 0;
+        display: none;
+    }
 }
 
 
@@ -862,6 +863,21 @@ ul {
 
 
 
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+    .system-header-img{
+        display: none !important;
+    }
+
+    .systems-header h1{
+        font-size: 4.5rem;
+    }
+
+    .systems-header-span{
+        grid-column: span 6 / span 6;
+    }
+}
+
 
 /* ---------------------------------------------------- media query ---------------------------------------------------- */
 
@@ -943,8 +959,10 @@ ul {
         top: 10px;
     }
 
-
 }
+
+
+
 
 
 @media (max-width: 767px) {
@@ -952,11 +970,12 @@ ul {
         display: none;
     }
 
-    .ourSysytemSwiper .swiper-button-next, .ourSysytemSwiper .swiper-button-prev {
+    .ourSysytemSwiper .swiper-button-next,
+    .ourSysytemSwiper .swiper-button-prev {
         top: -70px;
     }
 
-    .ourSysytemSwiper .swiper-button-prev{
+    .ourSysytemSwiper .swiper-button-prev {
         right: 50px;
     }
 
@@ -1051,7 +1070,8 @@ ul {
         background-size: 12px 24px;
     }
 
-    .ourSysytemSwiper .swiper-button-next, .ourSysytemSwiper .swiper-button-prev {
+    .ourSysytemSwiper .swiper-button-next,
+    .ourSysytemSwiper .swiper-button-prev {
         top: -40px;
     }
 

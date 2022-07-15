@@ -9,13 +9,13 @@ module.exports = {
       xs: "420px",
       "sm.5": "541px",
       "2md": "769px",
-  
+      "3md": "991px",
       ...defaultTheme.screens,
     },
 
     extend: {
       screens: {
-        "3md": "991px",
+   
         "3xl": "1540px",
       },
       colors: {
