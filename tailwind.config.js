@@ -29,6 +29,8 @@ module.exports = {
         "primary-white-90": "rgb(255 255 255 / 90%)",
         "primary-white-40": "#FFFFFF66",
         "primary-gray-02": "#F4F0EC",
+        "nav-white-90": "rgb(242 242 242 / 90%)",
+        "primary-dark-gray" : "#4A4A4A"
       },
       lineHeight: {
         tighter: "60px",

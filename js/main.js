@@ -9,6 +9,18 @@ $(".aboutus-tab").hover(function () {
   );
 });
 
+
+$(".organization-tab").removeClass("organization-active");
+$(".organization-tab").hover(function () {
+  $(".organization-tab").removeClass("organization-active");
+  $(this).addClass("organization-active");
+  var backgroundPicture = $(this).data("background");
+  $(".organization-section").css(
+    "background-image",
+    "url(" + backgroundPicture + ")"
+  );
+});
+
 $(".button-dm").click(function () {
   $(".side-menu").addClass("active");
 });
