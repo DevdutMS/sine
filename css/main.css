@@ -237,7 +237,7 @@ ul {
 }
 
 .bullet-ul.white li::before {
-    background-image: url(../img/Bullet-Icon-white.svg);
+    background-image: url(./img/Bullet-Icon-white.svg);
 }
 
 .mySwiper .swiper-button-next,
