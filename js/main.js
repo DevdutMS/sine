@@ -24,3 +24,24 @@ $(document).ready(function(){
     $("#accordion-collapse-body-d").slideToggle();
   });
 });
+
+
+
+
+$(document).ready(function () {
+  var scroll_start = 0;
+  var startchange = $(".a-nav").next();
+  var offset = startchange.offset();
+  if (startchange.length) {
+    $(document).scroll(function () {
+      scroll_start = $(this).scrollTop();
+      if ($(window).width() > 200) {
+        if (scroll_start > offset.top) {
+          $(".a-nav").addClass("scrolled");
+        } else {
+          $(".a-nav").removeClass("scrolled");
+        }
+      }
+    });
+  }
+});

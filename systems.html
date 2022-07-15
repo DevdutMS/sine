@@ -15,15 +15,15 @@
 <body>
 
     <header class="relative h-screen systems-header">
-        <nav class="fixed top-0 left-0 z-50 block w-full bg-transparent">
+        <nav class="fixed top-0 left-0 z-50 block w-full bg-transparent a-nav">
             <div
-                class="hidden md:flex items-center justify-between z-10 px-6 sm:px-10 py-0.5 xl:py-1 mx-auto xl:px-16 2xl:px-24 3xl:py-2 bg-primary-orange first-nav">
+                class="hidden orange-div md:flex items-center justify-between z-10 px-6 sm:px-10 py-0.5 xl:py-1 mx-auto xl:px-16 2xl:px-24 3xl:py-2 bg-primary-orange first-nav">
                 <div></div>
                 <ul class="flex items-center space-x-6 xl:space-x-10">
                     <li><a href="" class="text-xs font-medium 3xl:text-sm text-primary-white opacity-60">Gallery</a>
                     </li>
-                    <li><a href="" class="text-xs font-medium 3xl:text-sm text-primary-white opacity-60">Downloads</a>
-                    </li>
+                    <li><a href=""
+                            class="text-xs font-medium 3xl:text-sm text-primary-white opacity-60">Downloads</a></li>
                     <li><a href="" class="text-xs font-medium 3xl:text-sm text-primary-white">Contact</a></li>
                 </ul>
 
@@ -35,7 +35,7 @@
                         <img src="./img/logo.png" class="w-20 xl:w-24" alt="logo">
                         <h6
                             class="ml-4 text-xl font-bold tracking-tighter xl:ml-8 xl:text-2xl text-primary-gray sm.5:block hidden">
-                            <span class="text-primary-orange">SINE</span>CLADDING SOLUTIONS
+                            <span class="pr-1 text-primary-orange">SINE</span>CLADDING SOLUTIONS
                         </h6>
                     </div>
 
@@ -52,7 +52,7 @@
                             </li>
                             <li class="relative hidden md:block nav-item nav-systems">
                                 <a class="relative flex items-center py-4 space-x-2 text-xs font-medium xl:text-sm 3xl:text-base nav-link xl:py-6 3xl:py-7"
-                                    href="#1"><span>Systems</span>
+                                    href="systems.html"><span>Systems</span>
                                     <svg class="w-3 xl:w-4" viewBox="0 0 16 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -93,81 +93,139 @@
 
 
                         </ul>
-                        <button class="flex flex-col w-10 p-2 space-y-1 md:hidden nav-icon -skew-x-18 button-dm">
-                            <span class="w-8 h-1 3xl:h-1.5 bg-primary-brown"></span>
-                            <span class="w-8 h-1 3xl:h-1.5 bg-primary-brown"></span>
-                            <span class="w-8 h-1 3xl:h-1.5 bg-primary-brown"></span>
+                        <button class="md:hidden nav-icon button-dm">
+                            <img src="./img/navIcon.png" class="object-cover w-10 -mb-3" alt="icon">
                         </button>
                     </div>
                 </div>
             </div>
 
+            <div class="side-menu">
 
+                <button aria-label="close"
+                    class="fixed right-0 flex items-center justify-center text-xl font-light text-center bg-black shadow-2xl cursor-pointer nav-menus-wrapper-close-button w-14 h-14">
+                    <span class="text-white ">✕</span></button>
+        
+                <ul class="side-menu-ul">
+                    <li class="relative inline-block w-full mt-12 side-item"><a
+                            class="inline-block w-full h-auto p-5 text-sm font-bold text-left border-b border-gray-200 side-link decoration-0"
+                            href="">Home</a></li>
+        
+                    <li class="relative inline-block w-full side-item"><a
+                            class="inline-block w-full h-auto p-5 text-sm font-bold text-left border-b border-gray-200 side-link decoration-0"
+                            href="">About Us</a></li>
+        
+        
+                    <li id="accordion-collapse-d" data-accordion="collapse">
+                        <h2 id="accordion-collapse-heading-1">
+                            <button type="button" aria-label="loans"
+                                class="flex items-center justify-between w-full h-auto p-5 text-sm font-bold text-left border-b border-gray-200 side-link decoration-0 "
+                                data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-1">
+                                <span>Systems</span>
+                                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-d" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                            <div class="px-5 py-4 bg-gray-100">
+                                <ul class="text-left">
+                                    <li class="py-1.5"><a href="" class="text-xs font-medium text-left">Horizontal Cladding
+                                        </a>
+                                    </li>
+                                    <li class="py-1.5"><a href="" class="text-xs font-medium text-left ">Vertical
+                                            Cladding</a>
+                                    </li>
+                                    <li class="py-1.5"><a href="" class="text-xs font-medium text-left">Horizontal Cladding</a>
+                                    </li>
+        
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+        
+                    <li class="relative inline-block w-full side-item"><a
+                            class="inline-block w-full h-auto p-5 text-sm font-bold text-left border-b border-gray-200 side-link decoration-0"
+                            href="">R&D</a></li>
+        
+                </ul>
+            </div>
         </nav>
 
-        <div class="grid grid-cols-12">
-            <div class="col-span-4">
+        <div class="grid items-center h-full grid-cols-12 px-6 sm:px-0">
+            <div class="pt-6 pl-0 sm:pt-0 col-span-full sm:col-span-4 sm:pl-10 xl:pl-16 2xl:pl-24">
                 <h1
-                    class="relative text-3.5xl xs:text-4xl sm.5:text-4.5xl sm:text-5xl 3xl:text-6.5xl font-black tracking-tight text-white leading-7 sm.5:leading-9 3xl:leading-tighter head-line ">
+                    class="relative text-4xl lg:text-5xl 3xl:text-6.5xl font-black tracking-tight text-primary-black-90 lg:text-white leading-7 sm.5:leading-9 3xl:leading-tighter head-line before:bg-primary-orange lg:before:bg-white ">
                     <span class="text-primary-orange">TABLE-TOP</span> <br>
                     SYSTEMS
                 </h1>
 
                 <p
-                    class="pt-2 sm.5:pt-3 text-xs sm.5:text-sm leading-none sm.5:leading-2 3xl:leading-6 3xl:text-lg text-primary-white w-400">
+                    class="pt-2 sm.5:pt-3 text-xs sm.5:text-sm leading-none sm.5:leading-2 3xl:leading-6 3xl:text-lg text-primary-black-90 lg:text-primary-white sm:w-400">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. At eget iaculis eget eget neque, posuere
                     quis placerat arcu. </p>
 
-                <a href=""
+                <a href="#system-overview"
                     class="flex items-center px-6 py-3 mt-6 space-x-3 text-base font-bold text-white 3xl:text-lg 3xl:mt-8 bg-primary-orange w-fit shadow-btn-shadow">
                     <span>KNOW MORE</span>
                     <span><img src="./img/btn-arrow.svg" alt="btn-arrow"></span>
                 </a>
             </div>
 
-            <div class="col-span-8">
-                <img src="./img/system-head.png" class="w-full h-screen ml-auto" alt="">
+            <div class="hidden col-span-full sm:col-span-8 sm:block">                
+            <picture>
+                <source srcset="./img/table-top-mob.png" media="(max-width: 1023px)">
+                <img src="./img/system-head.png" class="object-cover w-full lg:h-screen lg:ml-auto lg:object-fill"alt="system" loading=“lazy”
+                    decoding=“async”>
+            </picture>
             </div>
+
 
         </div>
 
 
 
-        <div class="absolute flex items-center space-x-4 left-24 bottom-24">
-            <div class="text-base font-medium text-white">
+        <div class="absolute items-center hidden space-x-4 3md:flex left-10 xl:left-16 2xl:left-24 bottom-14 3xl:bottom-24">
+            <div class="text-sm font-medium text-white 3xl:text-base">
                 Systems
             </div>
             <div>
-                <img src="./img/btn-arrow.svg" alt="btn-arrow">
+                <img src="./img/btn-arrow.svg" class="w-1.5 3xl:w-2" alt="btn-arrow">
             </div>
-            <div class="text-base font-medium text-white">Table-top cladding system</div>
+            <div class="text-sm font-medium text-white 3xl:text-base">Table-top cladding system</div>
         </div>
     </header>
 
-    <section>
+    <!-- system overview  -->
+    <section id="system-overview">
 
-        <div class="grid grid-cols-3 linear-grad-bg ">
+        <div class="grid sm:grid-cols-2 3md:grid-cols-3 linear-grad-bg ">
             <div>
                 <img src="./img/systems-2.jpg" class="object-cover w-full h-auto" alt="systems">
             </div>
-            <div class="flex flex-col items-start justify-center pt-10 px-36">
+
+            <div class="flex flex-col items-start justify-center px-6 py-12 sm:pt-6 lg:px-8 xl:px-12 2xl:pt-10 2xl:px-20 3xl:px-36">
                 <h3
-                    class="relative text-3.5xl pb-6 xs:text-4xl sm.5:text-4.5xl sm:text-5xl 3xl:text-4.8xl font-black tracking-tight text-white leading-7 sm.5:leading-9 3xl:leading-10 head-line head-line-orange ">
+                    class="relative text-3.5xl pb-3 xl:pb-6 xs:text-2xl lg:text-3xl xl:text-4.5xl 3xl:text-4.8xl font-black tracking-tight text-white leading-7 sm:leading-5 xl:leading-9 3xl:leading-10 head-line head-line-orange ">
                     SYSTEM<br>
                     OVERVIEW
                 </h3>
 
-                <p class="pb-4 text-base font-medium text-primary-white-90">Lorem ipsum dolor sit amet, consectetur
+                <p class="pb-2 text-xs font-medium xl:pb-4 xl:text-sm 2xl:text-base text-primary-white-90">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. A, enim
                     egestas elementum tempus
                     consequat.Maecenas pretium augue sit amet aliquet luctus.</p>
 
-                <p class="text-base font-medium text-primary-white-90">Lorem ipsum dolor sit amet, consectetur
+                <p class="text-xs font-medium xl:text-sm 2xl:text-base text-primary-white-90">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. A, enim
                     egestas elementum tempus
                     consequat.Maecenas pretium augue sit amet aliquet luctus.</p>
 
-                <ul class="pt-6 space-y-3 bullet-ul white">
+                <ul class="pt-4 space-y-2 xl:space-y-3 xl:pt-6 bullet-ul white">
                     <li class="relative">
                         <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-white opacity-80 ">
                             Morbi ac neque
@@ -188,7 +246,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="block sm:hidden 3md:block">
                 <img src="./img/systems-1.jpg" class="object-cover w-full h-auto" alt="systems">
             </div>
 
@@ -198,10 +256,10 @@
     </section>
 
 
-    <section class="py-36 shade-bg">
+    <section class="py-16 sm:py-20 xl:py-28 2xl:py-36 shade-bg specification-section">
         <div class="">
-            <div class="grid items-center h-full grid-cols-12 px-6 sm:px-10 md:px-0">
-                <div class="flex flex-col pl-0 col-span-full md:col-span-8 lg:col-span-5 md:pl-10 xl:pl-16 2xl:pl-24">
+            <div class="grid items-center h-full grid-cols-12 ">
+                <div class="flex flex-col px-6 sm:pl-10 col-span-full md:col-span-6 lg:col-span-5 xl:pl-16 2xl:pl-24">
 
                     <h1
                         class="relative text-lg xxs:text-3.5xl xl:text-4.5xl 3xl:text-6xl font-black leading-4 xxs:leading-6 xl:leading-10 tracking-tight text-primary-black-90 head-line-orange">
@@ -267,15 +325,15 @@
                         </li>
                     </ul>
 
-                    <a href=""
+                    <a href="index.html"
                         class="flex items-center px-8 py-2.5 mt-6 space-x-3 text-base font-bold text-white 3xl:text-lg 3xl:mt-8 bg-primary-orange w-fit shadow-btn-shadow">
                         <span>KNOW MORE</span>
                         <span><img src="./img/btn-arrow.svg" alt="btn-arrow"></span>
                     </a>
                 </div>
 
-                <div class="col-span-12 mt-0 sm.5:block hidden  sm.5:-mt-64 md:col-span-4 lg:col-span-7 md:mt-0 ">
-                    <img src="./img/spec.png" class="w-2/3 ml-auto md:w-full" alt="spec">
+                <div class="col-span-12 mt-0 sm:block hidden  sm.5:-mt-64 md:col-span-6 lg:col-span-7 md:mt-0 ">
+                    <img src="./img/spec.png" class="w-4/5 ml-auto pointer-events-none md:w-full" alt="spec">
                 </div>
 
             </div>
@@ -283,35 +341,35 @@
     </section>
 
 
-    <section class="py-24 key-feature-sec">
+    <section class="py-12 sm:py-16 lg:py-20 2xl:py-24 key-feature-sec">
         <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
-            <div class="px-56">
+            <div class="md:px-20 lg:px-32 2xl:px-36 3xl:px-56">
                 <h3
-                    class="text-4.8xl mb-20 font-bold text-primary-white head-line head-line-orange before:left-1/2 before:-translate-x-1/2 relative text-center">
+                    class="text-3xl md:text-4xl 2xl:text-4.8xl mb-14 2xl:mb-20 font-bold text-primary-white head-line head-line-orange before:left-1/2 before:-translate-x-1/2 relative text-center">
                     KEY FEATURES</h3>
-                <div class="grid grid-cols-4 gap-24">
+                <div class="grid grid-cols-4 gap-2 sm:gap-6 md:gap-12 xl:gap-24">
                     <div>
                         <img src="./img/key1.png" class="h-auto mx-auto rounded-full w-44" alt="Weld Overlay">
-                        <p class="pt-10 text-lg font-medium leading-6 text-center text-primary-white-90">Weld Overlay
+                        <p class="pt-4 text-xs font-medium leading-3 text-center xl:leading-6 md:text-sm xl:text-base xl:pt-10 3xl:text-lg text-primary-white-90">Weld Overlay
                             for small pipes</p>
                     </div>
 
                     <div>
                         <img src="./img/key2.png" class="h-auto mx-auto rounded-full w-44" alt="Weld Overlay">
-                        <p class="pt-10 text-lg font-medium leading-6 text-center text-primary-white-90">Suitable for
+                        <p class="pt-4 text-xs font-medium leading-3 text-center xl:leading-6 md:text-sm xl:text-base xl:pt-10 3xl:text-lg text-primary-white-90">Suitable for
                             valves</p>
                     </div>
 
                     <div>
                         <img src="./img/key3.png" class="h-auto mx-auto rounded-full w-44" alt="Weld Overlay">
-                        <p class="pt-10 text-lg font-medium leading-6 text-center text-primary-white-90">Straight &
+                        <p class="pt-4 text-xs font-medium leading-3 text-center xl:leading-6 md:text-sm xl:text-base xl:pt-10 3xl:text-lg text-primary-white-90">Straight &
                             tapered
                             bore</p>
                     </div>
 
                     <div>
                         <img src="./img/key4.png" class="h-auto mx-auto rounded-full w-44" alt="Weld Overlay">
-                        <p class="pt-10 text-lg font-medium leading-6 text-center text-primary-white-90">Weld Overlay
+                        <p class="pt-4 text-xs font-medium leading-3 text-center xl:leading-6 md:text-sm xl:text-base xl:pt-10 3xl:text-lg text-primary-white-90">Weld Overlay
                             for flanges</p>
                     </div>
                 </div>
@@ -321,22 +379,22 @@
     </section>
 
 
-    <section class="py-24">
+    <section class="py-12 sm:py-16 lg:py-20 2xl:py-24">
         <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
             <h3
-                class="text-4.8xl mb-20 font-bold text-primary-black-90 head-line head-line-orange before:left-1/2 before:-translate-x-1/2 relative text-center">
+                class="text-xl sm:text-2xl md:text-4xl 2xl:text-4.8xl mb-6 md:mb-10 xl:mb-14 2xl:mb-20 font-bold text-primary-black-90 head-line head-line-orange before:left-1/2 before:-translate-x-1/2 relative text-center">
                 VALVE BORES IDEAL FOR TABLE-TOP SYSTEM</h3>
-            <div class="px-56">
-                <div class="grid grid-cols-4 gap-28">
+            <div class="md:px-10 lg:px-24 2xl:px-36 3xl:px-56">
+                <div class="grid grid-cols-4 gap-2 xs:gap-3 sm:gap-6 xl:gap-14 3xl:gap-28">
 
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
-                    <img src="./img/table-top.png" class="object-cover mx-auto h-52 w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
+                    <img src="./img/table-top.png" class="object-cover w-full h-full mx-auto sm:h-32 lg:h-52 sm:w-32 lg:w-52" alt="table-top">
 
 
 
@@ -351,23 +409,82 @@
 
 
 
-    <section class="py-20 linear-grad-bg">
+    <section class="pb-12 pt-14 md:pt-20 linear-grad-bg">
         <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
-            <h4 class="relative mb-12 text-4xl font-extrabold text-primary-white-90 head-line head-line-orange">OUR
+            <h4 class="relative mb-6 text-2xl font-extrabold sm:mb-12 xs:text-3xl sm:text-4xl text-primary-white-90 head-line head-line-orange">OUR
                 SYSTEMS</h4>
-            <div class="swiper ourSysytemSwiper">
+            <div class="relative swiper ourSysytemSwiper">
                 <div class="swiper-wrapper">
+
                     <div class="swiper-slide">
                         <div class="relative oursystem-div">
                             <img src="./img/oursystem1.jpg" class="object-cover w-full" alt="oursystem1">
-                            <h6 class="absolute w-full text-3xl font-bold text-center -translate-x-1/2 -translate-y-1/2 text-primary-white top-1/2 left-1/2">
+                            <h6 class="absolute w-full text-xs font-bold text-center -translate-x-1/2 -translate-y-1/2 sm:text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary-white top-1/2 left-1/2">
                                 HORIZONTAL <br>
                                 CLADDING SYSTEM
                             </h6>
                         </div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative oursystem-div">
+                            <img src="./img/oursystem1.jpg" class="object-cover w-full" alt="oursystem1">
+                            <h6 class="absolute w-full text-xs font-bold text-center -translate-x-1/2 -translate-y-1/2 sm:text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary-white top-1/2 left-1/2">
+                                VERTICAL <br>
+                                CLADDING SYSTEM
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative oursystem-div">
+                            <img src="./img/oursystem1.jpg" class="object-cover w-full" alt="oursystem1">
+                            <h6 class="absolute w-full text-xs font-bold text-center -translate-x-1/2 -translate-y-1/2 sm:text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary-white top-1/2 left-1/2">
+                                BUTT <br>
+                                WELDING SYSTEM
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative oursystem-div">
+                            <img src="./img/oursystem1.jpg" class="object-cover w-full" alt="oursystem1">
+                            <h6 class="absolute w-full text-xs font-bold text-center -translate-x-1/2 -translate-y-1/2 sm:text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary-white top-1/2 left-1/2">
+                                UNIVERSAL <br>
+                                CLADDING SYSTEM
+                            </h6>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <div class="relative oursystem-div">
+                            <img src="./img/oursystem1.jpg" class="object-cover w-full" alt="oursystem1">
+                            <h6 class="absolute w-full text-xs font-bold text-center -translate-x-1/2 -translate-y-1/2 sm:text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary-white top-1/2 left-1/2">
+                                HORIZONTAL <br>
+                                CLADDING SYSTEM
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative oursystem-div">
+                            <img src="./img/oursystem1.jpg" class="object-cover w-full" alt="oursystem1">
+                            <h6 class="absolute w-full text-xs font-bold text-center -translate-x-1/2 -translate-y-1/2 sm:text-sm md:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-primary-white top-1/2 left-1/2">
+                                HORIZONTAL <br>
+                                CLADDING SYSTEM
+                            </h6>
+                        </div>
+                    </div>
+
+
+
                 </div>
-                <div class="swiper-pagination"></div>
+
+                <div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
             </div>
         </div>
     </section>

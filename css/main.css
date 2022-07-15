@@ -84,7 +84,7 @@ body {
     height: 100%;
     scroll-behavior: smooth;
     /* overflow: hidden; */
-    touch-action: none;
+    /* touch-action: none; */
 }
 
 
@@ -128,6 +128,33 @@ ul {
     display: none;
 }
 
+.a-nav{
+    transition: 0.4s ease;
+}
+
+.orange-div{
+    transition: all 0.4s ease;
+}
+
+.a-nav.scrolled .orange-div{
+   display: none;
+   animation: height 0.8s ease;
+}
+
+@keyframes height {
+   0%{
+    height: 40px;
+    display: flex;
+    opacity: 1;
+   } 
+   100%{
+    height: 0;
+    opacity: 0;
+    display: none;
+   }
+}
+
+
 
 .head-line::before {
     content: "";
@@ -152,12 +179,16 @@ ul {
 /* ------------- header swiper section ------------- */
 
 .mySwiper .swiper-button-prev,
-.mySwiper .swiper-container-rtl .swiper-button-next {
+.mySwiper .swiper-container-rtl .swiper-button-next,
+.ourSysytemSwiper .swiper-button-prev,
+.ourSysytemSwiper .swiper-container-rtl .swiper-button-next {
     background-image: url(./img/Arrow-left.svg);
 }
 
 .mySwiper .swiper-button-next,
-.mySwiper .swiper-container-rtl .swiper-button-prev {
+.mySwiper .swiper-container-rtl .swiper-button-prev,
+.ourSysytemSwiper .swiper-button-next,
+.ourSysytemSwiper .swiper-container-rtl .swiper-button-prev {
     background-image: url(./img/Arrow-right.svg);
 }
 
@@ -168,6 +199,32 @@ ul {
     background-size: 14px 44px;
     background-color: var(--vblack);
 }
+
+.ourSysytemSwiper .swiper-button-next,
+.ourSysytemSwiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background-size: 14px 44px;
+    background-color: var(--vorange);
+}
+
+.ourSysytemSwiper .swiper-button-next.swiper-button-disabled,
+.ourSysytemSwiper .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+
+.ourSysytemSwiper .swiper-button-next {
+    top: -60px;
+    right: 0;
+}
+
+.ourSysytemSwiper .swiper-button-prev {
+    top: -60px;
+    left: auto;
+    right: 60px;
+}
+
 
 .bullet-ul li::before {
     background-image: url(./img/Bullet-Icon.svg);
@@ -221,13 +278,14 @@ ul {
 }
 
 @keyframes opacity {
-    0%{
+    0% {
         background-color: transparent;
     }
-    100%{
+
+    100% {
         background-color: var(--vorange);
     }
-    
+
 }
 
 /* shade-bg  */
@@ -269,12 +327,13 @@ ul {
     background-color: rgb(255 255 255 / 80%);
 }
 
-.systems-header,.linear-grad-bg {
+.systems-header,
+.linear-grad-bg {
     background: linear-gradient(42deg, rgba(20, 7, 0, 1) 0%, rgba(20, 7, 0, 0.9) 100%);
 }
 
 
-.key-feature-sec{
+.key-feature-sec {
     background: url(./img/key-feature.jpg) fixed no-repeat center;
     background-size: cover;
 }
@@ -472,7 +531,7 @@ ul {
     width: 100px;
 }
 
-.oursystem-div::before{
+.oursystem-div::before {
     position: absolute;
     content: "";
     top: 0;
@@ -484,8 +543,8 @@ ul {
     transition: 0.4s ease;
 }
 
-.oursystem-div:hover::before{
-  opacity: 0;
+.oursystem-div:hover::before {
+    opacity: 0;
 }
 
 
@@ -883,7 +942,7 @@ ul {
         width: 60px;
         top: 10px;
     }
-    
+
 
 }
 
@@ -891,6 +950,14 @@ ul {
 @media (max-width: 767px) {
     .head-swiper .elements {
         display: none;
+    }
+
+    .ourSysytemSwiper .swiper-button-next, .ourSysytemSwiper .swiper-button-prev {
+        top: -70px;
+    }
+
+    .ourSysytemSwiper .swiper-button-prev{
+        right: 50px;
     }
 
 
@@ -977,16 +1044,40 @@ ul {
         left: 24px;
     }
 
+    .ourSysytemSwiper .swiper-button-next,
+    .ourSysytemSwiper .swiper-button-prev {
+        height: 32px;
+        width: 32px;
+        background-size: 12px 24px;
+    }
+
+    .ourSysytemSwiper .swiper-button-next, .ourSysytemSwiper .swiper-button-prev {
+        top: -40px;
+    }
+
+    .ourSysytemSwiper .swiper-button-prev {
+        right: 40px;
+    }
+
 }
 
 
 
 
 @media (max-width: 1024px) {
-
     .side-dash::before {
         display: none;
     }
+
+
+}
+
+@media (max-width: 1023px) {
+
+    .systems-header {
+        background: #ffffff
+    }
+
 }
 
 
@@ -1006,23 +1097,34 @@ ul {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.658);
     }
-    
+
     .bullet-ul li::before {
         background-image: url(./img/Bullet-Icon-white.svg);
     }
 
-    .ovarlay-clad-div  .bullet-ul li::before{
+    .ovarlay-clad-div .bullet-ul li::before,
+    .specification-section .bullet-ul li::before {
         background-image: url(./img/Bullet-Icon.svg);
     }
+
+
 
 }
 
 @media (-webkit-device-pixel-ratio: 1.5) {
-    h1,h2,h3,h4,h5,h6,p,a{
-        zoom:0.8;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+        zoom: 0.8;
     }
 
-    .nav-item.nav-systems .systems-dropdown{
+    .nav-item.nav-systems .systems-dropdown {
         top: 54px;
     }
-  }
+}
