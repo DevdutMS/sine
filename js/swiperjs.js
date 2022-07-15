@@ -24,8 +24,10 @@ $(document).ready(function () {
     },
   });
 
+
+
   var swiper = new Swiper(".mySwiper", {
-    speed: 1500,
+    speed: 1200,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -36,6 +38,8 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
 
   var swiper = new Swiper(".clientSwiper", {
     slidesPerView: 7,
@@ -58,7 +62,7 @@ $(document).ready(function () {
       768: {
         slidesPerView: 3,
         spaceBetween: 40,
-      },   
+      },
       1280: {
         slidesPerView: 4,
         spaceBetween: 50,
@@ -87,7 +91,7 @@ $(document).ready(function () {
       768: {
         slidesPerView: 3,
         spaceBetween: 40,
-      },   
+      },
       1280: {
         slidesPerView: 4,
         spaceBetween: 50,
@@ -95,7 +99,6 @@ $(document).ready(function () {
     },
   });
 
-  
   var swiper = new Swiper(".ourSysytemSwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -107,14 +110,11 @@ $(document).ready(function () {
       640: {
         slidesPerView: 2,
         spaceBetween: 10,
-      },      
+      },
       1024: {
         slidesPerView: 3,
         spaceBetween: 30,
       },
     },
   });
-
 });
-
-
