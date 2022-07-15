@@ -4379,6 +4379,10 @@ textarea.form-control.is-invalid {
   background-color: rgb(246 97 26 / var(--tw-bg-opacity));
 }
 
+.bg-nav-white-90 {
+  background-color: rgb(242 242 242 / 90%);
+}
+
 .bg-primary-white-90 {
   background-color: rgb(255 255 255 / 90%);
 }
@@ -4406,10 +4410,6 @@ textarea.form-control.is-invalid {
 .bg-primary-brown {
   --tw-bg-opacity: 1;
   background-color: rgb(104 87 74 / var(--tw-bg-opacity));
-}
-
-.bg-nav-white-90 {
-  background-color: rgb(242 242 242 / 90%);
 }
 
 .bg-gradient-to-r {
@@ -7076,6 +7076,12 @@ ul {
   .\33xl\:gap-x-12 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
+  }
+
+  .\33xl\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
   .\33xl\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
