@@ -31,14 +31,14 @@ $(document).ready(function () {
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
+      pauseOnMouseEnter: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
-
 
 
   var swiper = new Swiper(".clientSwiper", {
