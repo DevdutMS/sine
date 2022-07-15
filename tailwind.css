@@ -4482,6 +4482,11 @@ textarea.form-control.is-invalid {
   padding-bottom: 4rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pr-1 {
   padding-right: 0.25rem;
 }
@@ -4536,6 +4541,10 @@ textarea.form-control.is-invalid {
 
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .text-left {
@@ -6118,16 +6127,12 @@ ul {
 }
 
 @media (min-width: 640px) {
-  .sm\:col-span-6 {
-    grid-column: span 6 / span 6;
+  .sm\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .sm\:col-span-8 {
     grid-column: span 8 / span 8;
-  }
-
-  .sm\:col-span-4 {
-    grid-column: span 4 / span 4;
   }
 
   .sm\:mb-12 {
@@ -6353,6 +6358,14 @@ ul {
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-3\.5xl {
