@@ -1,3 +1,8 @@
+$(document).ready(function (){
+  $('.loader_image').fadeOut(1000);
+});
+
+
 $(".aboutus-tab").removeClass("aboutus-active");
 $(".aboutus-tab").hover(function () {
   $(".aboutus-tab").removeClass("aboutus-active");

@@ -13,7 +13,6 @@
     <link rel="manifest" href="./favicon/site.webmanifest">
     <title>SINE CLADDING SOLUTIONS</title>
     <link rel="stylesheet" href="tailwind.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 
 <body>
@@ -28,7 +27,7 @@
         </div>
     </div>
 
-    <header class="relative h-screen aboutus-header">
+    <header class="relative pb-16 pt-36 xl:pt-48 linear-grad-bg">
         <nav class="fixed top-0 left-0 z-50 block w-full bg-transparent a-nav">
             <div
                 class="hidden md:flex items-center justify-between z-10 px-6 sm:px-10 py-0.5 xl:py-1 mx-auto xl:px-16 2xl:px-24 3xl:py-2 bg-primary-orange first-nav orange-div">
@@ -42,8 +41,8 @@
                     <li><a href="contactus.html" class="text-xs font-medium 3xl:text-sm text-primary-white">Contact</a>
                     </li>
                 </ul>
-            </div>
 
+            </div>
             <div
                 class="px-6 py-4 mx-auto sm:px-10 md:py-0 xl:px-16 2xl:px-24 bg-gradient-to-r from-white to-primary-white-90 second-nav">
                 <div class="flex items-center justify-between">
@@ -62,7 +61,7 @@
                                     href="index.html">Home</a>
                             </li>
                             <li class="hidden md:block nav-item">
-                                <a class="relative py-4 text-xs font-medium xl:text-sm 3xl:text-base nav-link active xl:py-6 3xl:py-7"
+                                <a class="relative py-4 text-xs font-medium xl:text-sm 3xl:text-base nav-link xl:py-6 3xl:py-7"
                                     href="aboutus.html">About
                                     Us</a>
                             </li>
@@ -189,379 +188,146 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="relative grid items-center h-full grid-cols-12 px-6 sm:px-0">
-            <div class="pt-6 pl-0 sm:pt-0 col-span-full sm:col-span-4 sm:pl-10 xl:pl-16 2xl:pl-24 systems-header-span">
-                <h1
-                    class="relative text-3xl md:text-4xl lg:text-5xl 3xl:text-6.5xl font-black tracking-tight text-white leading-7 sm.5:leading-9 3xl:leading-tighter head-line before:bg-primary-orange lg:before:bg-white ">
-                    <span class="text-primary-orange">ABOUT</span> <br>
-                    US
-                </h1>
-
-                <p
-                    class="pt-2 sm.5:pt-3 text-xs sm.5:text-sm leading-none sm.5:leading-2 3xl:leading-6 3xl:text-lg text-primary-white sm:w-400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At eget iaculis eget eget neque, posuere
-                    quis placerat arcu. </p>
-
-                <a href="#organization-section"
-                    class="flex items-center px-6 py-3 mt-6 space-x-3 text-base font-bold text-white 3xl:text-lg 3xl:mt-8 bg-primary-orange w-fit shadow-btn-shadow">
-                    <span>KNOW MORE</span>
-                    <span><img src="./img/btn-arrow.svg" alt="btn-arrow"></span>
-                </a>
-            </div>
-
-            <div class="hidden col-span-full sm:col-span-8 lg:block system-header-img">
-                <picture>
-                    <img src="./img/aboutus-head.png" class="object-cover w-full lg:h-screen lg:ml-auto lg:object-fill"
-                        alt="aboutus" loading=“lazy” decoding=“async”>
-                </picture>
-            </div>
-
-
-        </div>
-
-        <div
-            class="absolute items-center hidden space-x-4 3md:flex left-10 xl:left-16 2xl:left-24 bottom-12 3xl:bottom-14">
-            <a href="index.html" class="text-sm font-medium text-white 3xl:text-base">
-                Home
-            </a>
-            <div>
-                <img src="./img/btn-arrow.svg" class="w-1.5 3xl:w-2" alt="btn-arrow">
-            </div>
-            <div class="text-sm font-medium text-white 3xl:text-base">About Us</div>
-        </div>
-
-        <div class="absolute z-10 right-10 xl:right-16 2xl:right-24 bottom-20 md:bottom-12 xl:bottom-16">
-            <ul class="flex flex-col space-y-2 md:space-y-4">
-                <li><a href="" class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-white-90">
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0.00441472 22L1.49161 16.5352C0.511666 14.8553 -0.00317969 12.9448 1.47755e-05 11C1.47755e-05 4.9247 4.92471 0 11 0C17.0753 0 22 4.9247 22 11C22 17.0753 17.0753 22 11 22C9.05606 22.0031 7.14633 21.4887 5.46701 20.5095L0.00441472 22ZM7.03011 5.8388C6.88806 5.84762 6.74925 5.88503 6.62201 5.9488C6.50268 6.01637 6.39376 6.10084 6.29861 6.1996C6.16661 6.3239 6.09181 6.4317 6.01151 6.5362C5.60496 7.06529 5.38628 7.71476 5.39001 8.38199C5.39221 8.92099 5.53301 9.44569 5.75301 9.93629C6.20291 10.9285 6.94321 11.979 7.92111 12.9525C8.15651 13.1868 8.38641 13.4222 8.63391 13.6411C9.84764 14.7097 11.294 15.4803 12.8579 15.8917L13.4838 15.9874C13.6873 15.9984 13.8908 15.983 14.0954 15.9731C14.4158 15.9566 14.7286 15.8698 15.0117 15.719C15.1558 15.6448 15.2963 15.564 15.433 15.477C15.433 15.477 15.4803 15.4462 15.5705 15.378C15.719 15.268 15.8103 15.1899 15.9335 15.0612C16.0248 14.9666 16.104 14.8555 16.1645 14.729C16.2503 14.5497 16.3361 14.2076 16.3713 13.9227C16.3977 13.7049 16.39 13.5861 16.3867 13.5124C16.3823 13.3947 16.2844 13.2726 16.1777 13.2209L15.5375 12.9338C15.5375 12.9338 14.5805 12.5169 13.9964 12.2507C13.9348 12.2238 13.8688 12.2086 13.8017 12.2056C13.7264 12.1979 13.6504 12.2063 13.5787 12.2304C13.507 12.2545 13.4412 12.2937 13.3859 12.3453V12.3431C13.3804 12.3431 13.3067 12.4058 12.5114 13.3694C12.4658 13.4307 12.4029 13.4771 12.3308 13.5026C12.2587 13.528 12.1807 13.5314 12.1066 13.5124C12.0349 13.4932 11.9647 13.469 11.8965 13.4398C11.7601 13.3826 11.7128 13.3606 11.6193 13.3199L11.6138 13.3177C10.9845 13.0429 10.4019 12.6718 9.88681 12.2177C9.74821 12.0967 9.61951 11.9647 9.48751 11.8371C9.05474 11.4227 8.6776 10.9538 8.36551 10.4423L8.30061 10.3378C8.25399 10.2676 8.2163 10.1918 8.18841 10.1123C8.14661 9.95059 8.25551 9.82079 8.25551 9.82079C8.25551 9.82079 8.52281 9.52819 8.64711 9.36979C8.75061 9.23815 8.84717 9.1012 8.93641 8.95949C9.06621 8.75049 9.10691 8.53599 9.03871 8.36989C8.73071 7.6175 8.41171 6.8684 8.08391 6.1248C8.01901 5.9774 7.82651 5.8718 7.65161 5.8509C7.59221 5.8443 7.53281 5.8377 7.47341 5.8333C7.32569 5.82596 7.17766 5.82743 7.03011 5.8377V5.8388Z"
-                                fill="#4FCE5D" />
-                        </svg>
-                    </a>
-                </li>
-
-                <li><a href="" class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-white-90">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M0 1.4325C0 0.64125 0.6575 0 1.46875 0H18.5312C19.3425 0 20 0.64125 20 1.4325V18.5675C20 19.3588 19.3425 20 18.5312 20H1.46875C0.6575 20 0 19.3588 0 18.5675V1.4325ZM6.17875 16.7425V7.71125H3.1775V16.7425H6.17875ZM4.67875 6.4775C5.725 6.4775 6.37625 5.785 6.37625 4.9175C6.3575 4.03125 5.72625 3.3575 4.69875 3.3575C3.67125 3.3575 3 4.0325 3 4.9175C3 5.785 3.65125 6.4775 4.65875 6.4775H4.67875V6.4775ZM10.8138 16.7425V11.6988C10.8138 11.4288 10.8337 11.1587 10.9137 10.9662C11.13 10.4275 11.6238 9.86875 12.4538 9.86875C13.54 9.86875 13.9737 10.6963 13.9737 11.9113V16.7425H16.975V11.5625C16.975 8.7875 15.495 7.4975 13.52 7.4975C11.9275 7.4975 11.2138 8.3725 10.8138 8.98875V9.02H10.7938C10.8004 9.00957 10.8071 8.99915 10.8138 8.98875V7.71125H7.81375C7.85125 8.55875 7.81375 16.7425 7.81375 16.7425H10.8138Z"
-                                fill="#0077B5" />
-                        </svg>
-                    </a>
-                </li>
-
-                <li><a href="" class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-white-90">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M21.5393 2.45614C21.4148 1.98214 21.1722 1.55301 20.8373 1.21436C20.4929 0.865297 20.0708 0.615604 19.6109 0.488849C17.8897 0.00484854 10.9936 0.00484869 10.9936 0.00484869C8.11869 -0.0300456 5.2445 0.123428 2.38724 0.464404C1.92731 0.600524 1.50605 0.855796 1.16091 1.20752C0.821789 1.5556 0.576155 1.98485 0.447839 2.45516C0.139599 4.22664 -0.0101652 6.02536 0.000565675 7.82707C-0.0104328 9.62716 0.138964 11.4253 0.447839 13.199C0.573405 13.6673 0.818122 14.0946 1.15816 14.4398C1.4982 14.7849 1.92164 15.0343 2.38724 15.1663C4.13143 15.6493 10.9936 15.6493 10.9936 15.6493C13.8721 15.6842 16.75 15.5308 19.6109 15.1897C20.0708 15.063 20.4929 14.8133 20.8373 14.4642C21.172 14.1256 21.4144 13.6965 21.5384 13.2224C21.8547 11.4516 22.0085 9.65218 21.9976 7.84956C22.0214 6.03931 21.8678 4.23136 21.5393 2.45516V2.45614ZM8.80122 11.175V4.48014L14.5388 7.82805L8.80122 11.175Z"
-                                fill="#FF0000" fill-opacity="0.9" />
-                        </svg>
-
-                    </a>
-                </li>
-            </ul>
+        <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
+            <h1
+                class="relative text-3xl md:text-4xl lg:text-5xl 3xl:text-6.5xl font-black tracking-tight text-primary-orange leading-7 sm.5:leading-9 3xl:leading-tighter head-line ">
+                CONTACT <span class="text-primary-white">US</span> </h1>
         </div>
     </header>
 
-    <!-- OUR ORGANIZATION -->
-    <section class="relative py-16 md:py-20 xl:py-28 2xl:py-32 3xl:py-40 organization-section"
-        id="organization-section">
-        <div class="relative z-10 px-6 sm:px-10 xl:px-16 2xl:px-24">
-            <div class="grid items-center grid-cols-1 gap-10 lg:grid-cols-12 2xl:gap-12 3xl:gap-16">
-
-                <div class="col-span-full lg:col-span-4">
-                    <h3
-                        class="relative text-3.5xl pb-3 xl:pb-6 xs:text-2xl lg:text-3xl xl:text-4.5xl 3xl:text-4.8xl font-black tracking-tight text-white leading-7 sm:leading-5 xl:leading-9 3xl:leading-10 head-line head-line-orange ">
-                        OUR ORGANIZATION
-                    </h3>
-
-                    <div class="space-y-6 xl:w-96">
-                        <p class="text-xs font-medium xl:pb-4 xl:text-sm 2xl:text-base text-primary-white-90">Lorem
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque a libero porta
-                            imperdiet. Nullam malesuada orci vitae enim convallis dictum. Nam gravida aliquam facilisis.
-                        </p>
-
-                        <p class="text-xs font-medium xl:text-sm 2xl:text-base text-primary-white-90">Lorem ipsum dolor
-                            Vestibulum eu feugiat erat.
-                            Ut lacinia magna sed lorem interdum, in facilisis ante rhoncus. Integer ullamcorper id justo
-                            ut fringilla. Sed erat purus, aliquet ac vehicula non, porta id augue. Etiam blandit risus
-                            odio, quis condimentum magna accumsan at.</p>
-
-                        <p class="text-xs font-medium xl:text-sm 2xl:text-base text-primary-white-90">Vestibulum eu
-                            feugiat erat.
-                            Ut lacinia magna sed lorem interdum, in facilisis ante rhoncus. Integer ullamcorper id justo
-                            ut fringilla. Sed erat purus, aliquet ac vehicula non, porta id augue</p>
-
-                    </div>
-
-
-                    <a href="gallery.html"
-                        class="flex items-center px-8 py-2.5 mt-6 space-x-3 text-base font-bold text-white 3xl:text-lg 3xl:mt-8 bg-primary-orange w-fit shadow-btn-shadow">
-                        <span>GALLERY</span>
-                        <span><img src="./img/btn-arrow.svg" alt="btn-arrow"></span>
-                    </a>
-                </div>
-
-                <div class="col-span-full lg:col-span-8">
-                    <div class="hidden sm.5:grid grid-cols-3 sm:gap-x-4 xl:gap-x-8 3xl:gap-x-12">
-
-                        <div data-background="./img/aboutus-bg.jpg"
-                            class="flex flex-col items-center w-full px-4 py-4 mx-auto text-center cursor-pointer lg:w-52 2xl:w-64 sm:px-6 text-primary-white sm:py-7 xl:py-9 organization-tab organization-active">
-                            <div
-                                class="relative px-6 pb-3 text-xs font-bold tracking-tighter sm:text-lg xl:text-xl xl:pb-4 3xl:text-2xl before:absolute before:bottom-0 before:w-full before:h-px before:bg-primary-white before:left-1/2 before:-translate-x-1/2">
-                                01</div>
-                            <h6
-                                class="py-1 text-sm font-bold tracking-tighter xs:py-3 sm:text-lg xl:py-5 xl:text-xl 3xl:py-8 3xl:text-2xl">
-                                VISION</h6>
-                            <p class="text-xs font-medium leading-4 xl:leading-5 xl:text-sm 3xl:text-base opacity-80 ">
-                                Lorem ipsum dolor sit
-                                amet, consectetur
-                                adipiscing elit. Congue convallis
-                                sed morbi in
-                                feugiat. </p>
-
-                        </div>
-
-
-                        <div data-background="./img/sectors.jpg"
-                            class="flex flex-col items-center w-full px-4 py-4 mx-auto text-center cursor-pointer lg:w-52 2xl:w-64 sm:px-6 text-primary-white sm:py-7 xl:py-9 organization-tab">
-                            <div
-                                class="relative px-6 pb-3 text-xs font-bold tracking-tighter sm:text-lg xl:text-xl xl:pb-4 3xl:text-2xl before:absolute before:bottom-0 before:w-full before:h-px before:bg-primary-white before:left-1/2 before:-translate-x-1/2">
-                                02</div>
-                            <h6
-                                class="py-1 text-sm font-bold tracking-tighter xs:py-3 sm:text-lg xl:py-5 xl:text-xl 3xl:py-8 3xl:text-2xl">
-                                QUALITY</h6>
-                            <p class="text-xs font-medium leading-4 xl:leading-5 xl:text-sm 3xl:text-base opacity-80 ">
-                                Lorem ipsum dolor sit
-                                amet, consectetur
-                                adipiscing elit. Congue convallis
-                                sed morbi in
-                                feugiat. </p>
-                        </div>
-
-                        <div data-background="./img/img3.jpg"
-                            class="flex flex-col items-center w-full px-4 py-4 mx-auto text-center cursor-pointer lg:w-52 2xl:w-64 sm:px-6 text-primary-white sm:py-7 xl:py-9 organization-tab">
-                            <div
-                                class="relative px-6 pb-3 text-xs font-bold tracking-tighter sm:text-lg xl:text-xl xl:pb-4 3xl:text-2xl before:absolute before:bottom-0 before:w-full before:h-px before:bg-primary-white before:left-1/2 before:-translate-x-1/2">
-                                03</div>
-                            <h6
-                                class="py-1 text-sm font-bold tracking-tighter xs:py-3 sm:text-lg xl:py-5 xl:text-xl 3xl:py-8 3xl:text-2xl">
-                                MISSION</h6>
-                            <p class="text-xs font-medium leading-4 xl:leading-5 xl:text-sm 3xl:text-base opacity-80">
-                                Lorem ipsum dolor sit
-                                amet, consectetur
-                                adipiscing elit. Congue convallis
-                                sed morbi in
-                                feugiat. </p>
-
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Facilities  -->
-    <section class="pt-20 pb-16 md:pb-20 xl:pb-28 2xl:pb-32 md:pt-24 xl:pt-32 2xl:pt-36 facilities-sec" id="facilities">
+    <section class="pt-16 pb-14 xl:pb-20 xl:pt-24">
         <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
+            <div class="grid grid-cols-1 gap-8 lg:gap-10 xl:gap-12 2xl:gap-24 lg:grid-cols-12">
+                <div class="col-span-full lg:col-span-7 xl:col-span-6">
+                    <h4
+                        class="text-xl sm:text-2xl xl:text-2.5xl font-extrabold text-primary-black-90 relative head-line head-line-orange mb-4 sm:mb-8 xl:mb-12">
+                        ENQUIRY FORM</h4>
+                    <form action="">
+                        <div class="space-y-5 sm:space-y-8 3xl:space-y-12">
+                            <div>
+                                <div
+                                    class="mb-4 text-lg font-semibold tracking-tighter sm:text-xl 3xl:text-2xl text-primary-black-80 sm:mb-6 xl:mb-7">
+                                    Title*
+                                </div>
+                                <div class="flex items-center space-x-6">
 
-            <div class="grid items-center grid-cols-1 gap-8 md:grid-cols-12 xl:gap-16">
-                <div class="col-span-full md:col-span-5 lg:col-span-4">
-                    <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-5">
+                                    <div class="flex items-center form-check">
+                                        <input
+                                            class="float-left mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-full appearance-none cursor-pointer w-7 h-7 form-check-input checked:bg-orange-600 checked:border-orange-600 focus:outline-none"
+                                            type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="inline-block text-gray-800 form-check-label"
+                                            for="flexRadioDefault1">
+                                            Mr.
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center form-check">
+                                        <input
+                                            class="float-left mr-2 align-top transition duration-200 bg-white bg-center bg-no-repeat bg-contain border border-gray-300 rounded-full appearance-none cursor-pointer w-7 h-7 form-check-input checked:bg-orange-600 checked:border-orange-600 focus:outline-none"
+                                            type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="inline-block text-gray-800 form-check-label"
+                                            for="flexRadioDefault2">
+                                            Mrs.
+                                        </label>
+                                    </div>
 
-                        <h1
-                            class="relative text-3.5xl pb-1 xl:pb-2 xs:text-2xl lg:text-3xl xl:text-4.5xl 3xl:text-4.8xl font-black tracking-tight text-primary-black-90 leading-7 sm:leading-5 xl:leading-9 3xl:leading-10 head-line head-line-orange ">
-                            FACILITIES
-                        </h1>
+                                </div>
+                            </div>
 
-                        <p
-                            class="pt-1 text-xs font-medium leading-4 xxs:pt-4 xl:text-sm xl:pt-2 3xl:leading-6 3xl:text-lg text-primary-black-90 ">
-                            Nam ac orci lobortis, accumsan orci vel, <br> imperdiet nulla.
-                        </p>
+                            <div class="flex flex-col items-center space-y-5 sm:space-y-0 sm:space-x-2 sm:flex-row">
+                                <div class="w-full">
+                                    <input type="text"
+                                        class="block w-full py-2 m-0 text-sm font-medium transition ease-in-out bg-white border-b border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        id="exampleFormControlInput1" placeholder="First Name*" />
+                                </div>
 
-                        <ul class="py-3 space-y-1 xl:space-y-2 3xl:py-5 bullet-ul xl:w-96">
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Morbi ac
-                                    neque
-                                    dictum,
-                                    tincidunt neque ac, ullamcorper eros.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Cras a
-                                    sapien
-                                    tempus,
-                                    tempor
-                                    leo ut, rutrum ipsum.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Nam vel
-                                    dui eu nisi
-                                    sollicitudin commodo.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Cras a
-                                    sapien
-                                    tempus,
-                                    tempor
-                                    leo ut, rutrum ipsum.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Nam vel
-                                    dui eu nisi
-                                    sollicitudin commodo.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Morbi ac neque
-                                    dictum, tincidunt neque ac, ullamcorper eros.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Nam vel
-                                    dui eu nisi
-                                    sollicitudin commodo.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Cras a
-                                    sapien
-                                    tempus,
-                                    tempor
-                                    leo ut, rutrum ipsum.</p>
-                            </li>
-                            <li class="relative">
-                                <p class="pl-4 text-xs xl:text-sm 3xl:text-base text-primary-black-80">Nam vel
-                                    dui eu nisi
-                                    sollicitudin commodo.</p>
-                            </li>
-                        </ul>
+                                <div class="w-full">
+                                    <input type="text"
+                                        class="block w-full py-2 m-0 text-sm font-medium transition ease-in-out bg-white border-b border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        id="exampleFormControlInput1" placeholder="Last Name*" />
+                                </div>
+                            </div>
 
-                        <a href="contactus.html"
-                            class="flex items-center px-8 py-2.5 mt-6 space-x-3 text-base font-bold text-white 3xl:text-lg 3xl:mt-8 bg-primary-orange w-fit shadow-btn-shadow">
-                            <span>GET IN TOUCH</span>
-                            <span><img src="./img/btn-arrow.svg" alt="btn-arrow"></span>
-                        </a>
+                            <div class="flex flex-col items-center space-y-5 sm:space-y-0 sm:space-x-2 sm:flex-row">
+                                <div class="w-full">
+                                    <input type="text"
+                                        class="block w-full py-2 m-0 text-sm font-medium transition ease-in-out bg-white border-b border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        id="exampleFormControlInput1" placeholder="Company Name*" />
+                                </div>
+
+                                <div class="w-full">
+                                    <input type="text"
+                                        class="block w-full py-2 m-0 text-sm font-medium transition ease-in-out bg-white border-b border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        id="exampleFormControlInput1" placeholder="Email Address*" />
+                                </div>
+                            </div>
+
+
+                            <div class="flex flex-col items-center space-y-5 sm:space-y-0 sm:space-x-2 sm:flex-row">
+                                <div class="w-full">
+                                    <input type="text"
+                                        class="block w-full py-2 m-0 text-sm font-medium transition ease-in-out bg-white border-b border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        id="exampleFormControlInput1" placeholder="Country*" />
+                                </div>
+
+                                <div class="w-full">
+                                    <div>
+                                        <select
+                                            class="block w-full py-2 m-0 text-sm font-medium transition ease-in-out bg-white bg-no-repeat border-b border-solid appearance-none md:leading-none md:text-lg xl:py-3 3xl:text-xl border-primary-black-60 form-select text-primary-black-60 bg-clip-padding focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                            aria-label="Default select example">
+                                            <option selected disabled>System Interested</option>
+                                            <option value="1">Horizontal Cladding</option>
+                                            <option value="2">Vertical Cladding</option>
+                                            <option value="3">Butt Welding</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center space-x-2 2xl:w-1/2">
+                                    <select id="code-dropdown" name="countryCode"
+                                        class="block w-1/3 py-2 m-0 text-sm font-medium transition ease-in-out bg-white bg-no-repeat border-b border-solid appearance-none md:leading-none md:text-lg xl:py-3 3xl:text-xl border-primary-black-60 form-select text-primary-black-60 bg-clip-padding focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        aria-label="Default select example">
+                                        <option selected disabled>+91 - India</option>
+                                    </select>
+
+                                    <input type="tel"
+                                        class="block w-2/3 py-2 m-0 text-sm font-medium transition ease-in-out bg-white border-b border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                        id="exampleFormControlInput1" placeholder="Phone" />
+                                </div>
+                            </div>
+
+                            <div class="2xl:w-1/2">
+
+                                <textarea
+                                    class="block w-full px-3 py-2 m-0 text-sm font-medium transition ease-in-out bg-white border border-solid md:text-lg xl:py-3 3xl:text-xl form-control text-primary-black-60 bg-clip-padding border-primary-black-60 focus:text-primary-black-90 focus:bg-white focus:border-b focus:shadow-none focus:outline-none"
+                                    id="enquiry" rows="3" placeholder="Your Enquiry"></textarea>
+
+                            </div>
+
+                            <div class="flex items-end space-x-4 md:space-x-8">
+                                <a href="#system-overview"
+                                    class="flex items-center px-6 py-2 space-x-3 text-base font-bold text-white xl:py-3 3xl:text-lg bg-primary-orange w-fit shadow-btn-shadow">
+                                    <span>SUBMIT</span>
+                                    <span><img src="./img/btn-arrow.svg" alt="btn-arrow"></span>
+                                </a>
+
+                                <p class="text-xs italic font-normal md:text-sm xl:text-lg text-primary-60 ">*These fields are required</p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-span-full lg:col-span-5 xl:col-span-6">
+                    <div class="relative map-div">
+                        <img src="./img/map.jpg" alt="map" class="w-full">
                     </div>
                 </div>
-                <div class="hidden col-span-7 lg:col-span-8 md:block">
-                    <img src="./img/facilities.jpg" class="object-cover w-full" alt="facilities">
-                </div>
-
 
             </div>
         </div>
     </section>
-
-
-    <!-- Welding passion  -->
-    <section class="pt-20 pb-16 md:pb-20 xl:pb-28 2xl:pb-32 md:pt-24 xl:pt-32 2xl:pt-36 bg-primary-dark-gray">
-        <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
-
-            <div class="grid items-center grid-cols-1 gap-8 md:grid-cols-12 xl:gap-16">
-                <div class="col-span-full md:col-span-5 lg:col-span-4">
-                    <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-5">
-
-                        <h1
-                            class="relative text-3.5xl pb-1 xl:pb-2 xs:text-2xl lg:text-3xl xl:text-4.5xl 3xl:text-4.8xl font-black tracking-tight text-primary-white-90 leading-7 sm:leading-5 xl:leading-9 3xl:leading-10 head-line head-line-orange ">
-                            WELDING PASSION
-                        </h1>
-
-                        <div class="space-y-3 md:space-y-6 xl:w-96">
-                            <p class="text-xs font-medium xl:pb-4 xl:text-sm 2xl:text-base text-primary-white-90">Lorem
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in neque a libero porta
-                                imperdiet. Nullam malesuada orci vitae enim convallis dictum. Nam gravida aliquam
-                                facilisis.
-                            </p>
-
-                            <p class="text-xs font-medium xl:text-sm 2xl:text-base text-primary-white-90">Lorem ipsum
-                                dolor
-                                Vestibulum eu feugiat erat.
-                                Ut lacinia magna sed lorem interdum, in facilisis ante rhoncus. Integer ullamcorper id
-                                justo
-                                ut fringilla. Sed erat purus, aliquet ac vehicula non, porta id augue. Etiam blandit
-                                risus
-                                odio, quis condimentum magna accumsan at.</p>
-
-                            <p class="text-xs font-medium xl:text-sm 2xl:text-base text-primary-white-90">Vestibulum eu
-                                feugiat erat.
-                                Ut lacinia magna sed lorem interdum, in facilisis ante rhoncus. Integer ullamcorper id
-                                justo
-                                ut fringilla. Sed erat purus, aliquet ac vehicula non, porta id augue</p>
-
-                            <p class="text-xs font-medium xl:text-sm 2xl:text-base text-primary-white-90">Vestibulum eu
-                                feugiat erat.
-                                Ut lacinia magna sed lorem interdum, in facilisis ante rhoncus. Integer ullamcorper id
-                                justo
-                                ut fringilla. Sed erat purus, aliquet ac vehicula non, porta id augue</p>
-
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-                <div class="hidden col-span-7 lg:col-span-8 md:block">
-                    <img src="./img/weldingpassion.jpg" class="object-cover w-full" alt="weldingpassion">
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="pt-20 pb-16 md:pb-24 md:pt-28">
-
-        <div class="px-6 sm:px-10 xl:px-16 2xl:px-24">
-            <h3
-                class="text-xl sm:text-2xl xl:text-3xl 3xl:text-4.5xl font-bold text-primary-black-90 head-line-orange relative ">
-                OUR
-                CLIENTS</h3>
-
-            <div class="pt-12">
-                <div class="swiper clientSwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./img/godrej.jpg" alt="client-img">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/aasia-logo.jpg" alt="client-img">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/delta_corp.jpg" alt="client-img">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/hawa_valve.jpg" alt="client-img">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/thermax_logo.jpg" alt="client-img">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/itag.jpg" alt="client-img">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="./img/godrej.jpg" alt="client-img">
-                        </div>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
 
 
     <footer class="relative px-6 pt-12 sm:px-10 xl:pt-14 xl:px-16 2xl:px-24 3xl:pt-20 home-footer">
@@ -634,7 +400,7 @@
                                     class="text-xs font-medium 3xl:text-sm text-primary-white opacity-80">R&D</a>
                             </li>
                             <li>
-                                <a href="#facilities"
+                                <a href="aboutus.html#facilities"
                                     class="text-xs font-medium 3xl:text-sm text-primary-white opacity-80">Facilities</a>
                             </li>
                             <li>
@@ -829,14 +595,12 @@
     </footer>
 
 
-
-
 </body>
 
-
+<script type="text/javascript" src="./js/readCC.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./js/main.js"></script>
-<script src="./js/swiper.min.js"></script>
-<script src="./js/swiperjs.js"></script>
+
+
 
 </html>
